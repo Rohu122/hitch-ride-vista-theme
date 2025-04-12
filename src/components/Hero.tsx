@@ -4,6 +4,7 @@ import { MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 import RideMap from "./RideMap";
 
 const Hero = () => {
@@ -81,10 +82,16 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="pt-4">
+              <div className="pt-4 space-y-3">
                 <Button className="bg-hitchride-dark text-white hover:bg-hitchride-dark/90 w-full py-6">
                   See prices
                 </Button>
+                
+                <Link to="/find-ride" className="block w-full">
+                  <Button className="bg-hitchride-primary text-white hover:bg-hitchride-primary/90 w-full py-6">
+                    Find a Ride
+                  </Button>
+                </Link>
               </div>
               
               <div className="text-center text-sm text-gray-500 pt-2">
