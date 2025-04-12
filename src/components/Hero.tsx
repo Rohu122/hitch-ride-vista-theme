@@ -87,11 +87,11 @@ const Hero = () => {
                   See prices
                 </Button>
                 
-                <Link to="/find-ride" className="block w-full">
+                <a href="https://github.com/Rohu122/hitch-ride-bangalore-smart" target="_blank" rel="noopener noreferrer" className="block w-full">
                   <Button className="bg-hitchride-primary text-white hover:bg-hitchride-primary/90 w-full py-6">
                     Find a Ride
                   </Button>
-                </Link>
+                </a>
               </div>
               
               <div className="text-center text-sm text-gray-500 pt-2">
