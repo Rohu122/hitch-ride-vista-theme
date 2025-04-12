@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,6 +16,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/how-it-works" element={<Index />} />
+          <Route path="/eco-points" element={<Index />} />
+          <Route path="/safety" element={<Index />} />
+          <Route path="/live-map" element={<Index />} />
+          {/* Legacy routes - keeping them for backward compatibility */}
           <Route path="/ride" element={<Index />} />
           <Route path="/drive" element={<Index />} />
           <Route path="/business" element={<Index />} />
